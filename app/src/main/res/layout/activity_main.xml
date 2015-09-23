@@ -4,7 +4,6 @@
 
     <ListView
         android:id="@+id/list_items"
-        android:entries="@array/lista_productos"
         android:dividerHeight="1dp"
         android:divider="#ff2233"
         android:layout_width="match_parent"

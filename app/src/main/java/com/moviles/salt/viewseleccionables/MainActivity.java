@@ -10,9 +10,16 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.moviles.salt.viewseleccionables.Adapters.ProductosAdapter;
+import com.moviles.salt.viewseleccionables.models.Productos;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class MainActivity extends Activity implements AdapterView.OnItemClickListener {
 
     ListView listaProductos;
+    List<Productos> data;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +28,21 @@ public class MainActivity extends Activity implements AdapterView.OnItemClickLis
 
         listaProductos = (ListView) findViewById(R.id.list_items);
         listaProductos.setOnItemClickListener(this);
+
+        data = new ArrayList<>();
+
+        Productos producto1 = new Productos("Computador Asus",
+                "2.100.00",R.string.caracteristicas_asus);
+
+        Productos producto2 = new Productos("Celular Samsung",
+                "2.500.00",R.string.caracteristicas_cel);
+
+        data.add(producto1);
+        data.add(producto2);
+
+        ProductosAdapter adapter = new ProductosAdapter(data,this);
+
+        listaProductos.setAdapter(adapter);
     }
 
 
