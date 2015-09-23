@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">ViewSeleccionables</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <array name="lista_productos">
+        <item>Computador</item>
+        <item>Celular</item>
+        <item>Mause</item>
+        <item>Teclado</item>
+        <item>Monitor</item>
+    </array>
+    <string name="title_activity_computador">ComputadorActivity</string>
+
+    <string name="caracteristicas_asus"></string>
+    <string name="title_activity_celular">CelularActivity</string>
+    <string name="caracteristicas_cel">Inspirado por la
+        técnica artesanal del soplado de cristal y la
+        orfebrería, Samsung Galaxy S6 edge representa
+        una fusión única de metal y vidrio.
+        El resultado es un smartphone con diseño único,
+        curvas elegantes y superficie de cristal que
+        reproduce el color en toda su belleza.</string>
+</resources>
